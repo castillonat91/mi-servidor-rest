@@ -83,7 +83,7 @@ func putAlbumById(c *gin.Context) {
 	c.JSON(http.StatusNotFound, gin.H{"mensaje": "álbum no encontrado"})
 }
 
-// rutas//
+// rutas para ejecutar//
 func main() {
 	router := gin.Default()
 	router.GET("/albums", getAlbums)
